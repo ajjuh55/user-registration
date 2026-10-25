@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h1>REGISTRATION FORM</h1>
+        
+        <table>
+            
+            <tr>
+                <th>FIRSTNAME:</th>
+                <td><input type="text" required minlength="3" placeholder="enter firstname"></td>
+            </tr>
+            
+            <tr>
+                <th>LASTNAME:</th>
+            <td><input type="text" required placeholder="enter lastname"></td>
+            </tr>
+
+            <tr>
+                <th>DOB:</th>
+                <td><input type="date" required ></td>
+            </tr>
+
+            <tr>
+                <th>GENDER:</th>
+                <td><input type="radio" name="gender" value="male" required>Male</td>
+                <td><input type="radio" name="gender" value="female">Female</td>
+            </tr>
+            <tr>
+                <th>QUALIFICATION:</th>
+                <td><input type="checkbox" value="sslc" >SSLC</td>
+                <td><input type="checkbox" value="plustwo" >+2</td>
+                <td><input type="checkbox" value="ug" >UG</td>
+                <td><input type="checkbox" value="pg" >PG</td>
+            </tr>
+            <tr>
+                <th>ADDRESS:</th>
+                <td><textarea name="adress" id="" rows="4" cols="25"></textarea></td>
+            </tr>
+            <tr>
+                <th>SATATE:</th>
+                <td><select name="" id="select1">
+                    <option value="">Select State</option>
+                    <option value="KL">Kerala</option>
+                    <option value="AP">Andhra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="TN">Tamil Nadu</option>
+                </select>
+            </td>
+            </tr>
+
+            <tr>
+                <th>PINCODE:</th>
+                <td>
+                    <input type="text" name="pincode" pattern="[1-9][0-9]{5}" maxlength="6" minlength="6" inputmode="numeric" required>
+                </td>
+            </tr>
+
+            <tr>
+                <th>EMAIL:</th>
+                <td>
+                    <input type="email" required>
+                </td>
+            </tr>
+            <tr>
+                <th>PHONE:</th>
+                <td><input type="tel" name="phone" pattern="[6-9][0-9]{9}" maxlength="10" inputmode="numeric" required></td>
+            </tr>
+
+            <tr>
+                <th>USERNAME:</th>
+                <td><input type="text" minlength="3" maxlength="10" ></td>
+            </tr>
+            
+            <tr>
+                <th>PASSWORD:</th>
+                <td><input type="password" name="password" minlength="8" maxlength="16" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button>SUBMIT</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
